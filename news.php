@@ -64,9 +64,9 @@ $mainfeed->handle_content_type();
 	 
 			<div class="item">
 				<h2><a href="<?php echo $item->get_permalink(); ?>"><?php echo $item->get_title(); ?></a></h2>
-				<p><small>Posted on <?php echo $item->get_date('j F Y | g:i a'); ?></small></p>
+				<p><small>Posted on <?php echo $item->get_date('j F Y | H:i'); ?></small></p>
 
-				<img src="http://lorempixel.com/500/300/?=<?= rand(); ?>" class="pure-img" />
+				<img src="http://lorempixel.com/1000/040/?=<?= rand(); ?>" class="pure-img" />
 				<p><?php 
 					$max_words = 51;
 					$words = explode(" ", $item->get_content(), $max_words);
@@ -81,7 +81,7 @@ $mainfeed->handle_content_type();
 	 
 		<?php $count++; endforeach; ?>
 	</div>
-	<div class="pure-u-1 pure-u-md-1-3">
+	<div id="side-column" class="pure-u-1 pure-u-md-1-3">
 		<h3>Senaste nytt</h3>
 		<ul class="latest">
 			<?php
@@ -92,7 +92,7 @@ $mainfeed->handle_content_type();
 		 
 				<li class="latest-news">
 					<div>
-						<span><?php echo $item->get_date('g:i'); ?></span>
+						<span><?php echo $item->get_date('H:i'); ?></span>
 						<a href="<?php echo $item->get_permalink(); ?>"><?php echo $item->get_title(); ?></a>
 					</div>
 					<p><?php echo $item->get_description(); ?></p>

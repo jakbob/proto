@@ -34,7 +34,8 @@
 		        $("html").off('click', switchPage);
 		    }
 		    else {
-		        $("html").on('click', switchPage);
+		        //$("html").on('click', switchPage);
+		        $(".link").on('click', switchPage);
 
 		    }
 		}
@@ -72,21 +73,27 @@
 	</nav>
 
 	<article id="page1" class="page active">
-		
+		<a class="link" href="javascript: void(0)">En längre länk, yao</a>
 		<p>En sida om bilar.</p>
 		<p class="big-icon"><i class="fa fa-bullseye"></i></p>
 		<p>Tryck för att fortsätta</p>
 	</article>
 
 	<article id="page2" class="page">
+			<a class="link" href="javascript: void(0)">En längre länk, yao</a>
+
 		Hej här är sidan 2;
 	</article>
 
 	<article id="page3" class="page">
+			<a class="link" href="javascript: void(0)">En längre länk, yao</a>
+
 		Lorem ipsum lol
 	</article>
 
 	<article id="page4" class="page">
+			<a class="link" href="javascript: void(0)">En längre länk, yao</a>
+
 		Lol, lorem ipsum, woot.
 	</article>
 </body>
