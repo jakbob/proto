@@ -1,0 +1,56 @@
+body {
+  width: 100%;
+}
+h1 a,
+h2 a {
+  text-decoration: none;
+  color: black;
+}
+ul {
+  padding: 0;
+}
+.container {
+  margin: 0 auto;
+  width: 95%;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.clear {
+  clear: both;
+}
+.pure-g > div {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+header h1 {
+  display: inline-block;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  header h1 {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  #main-column {
+    padding-right: 2em;
+  }
+}
+ul.latest {
+  list-style-type: none;
+  padding: 0;
+}
+ul.latest li {
+  border-bottom: 1px solid grey;
+  margin-bottom: 1em;
+}

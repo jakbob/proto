@@ -1,0 +1,14 @@
+{
+  "name": "Navigataur",
+  "homepage": "https://github.com/micjamking/Navigataur",
+  "_release": "38b720e2ad",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "38b720e2ad2572d3204fac9ec4d82489885d37a2"
+  },
+  "_source": "https://github.com/micjamking/Navigataur.git",
+  "_target": "*",
+  "_originalSource": "https://github.com/micjamking/Navigataur.git",
+  "_direct": true
+}

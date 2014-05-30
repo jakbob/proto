@@ -1,0 +1,24 @@
+{
+  "name": "Wearable Prototype",
+  "version": "0.0.0",
+  "authors": [
+    "Jakob Florell <jakob.florell@valtech.se>"
+  ],
+  "description": "A test",
+  "license": "None",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "pure": "latest",
+    "requirejs": null,
+    "Navigataur": "https://github.com/micjamking/Navigataur",
+    "font-awesome": "~4.1.0"
+  }
+}
