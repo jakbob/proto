@@ -1,14 +1,36 @@
-html, body { word-break: break-all; word-break: break-word;}
-.container { width: 95%; margin: 0 auto; }
+html, body { word-break: break-all; word-break: break-word; width: 100%; overflow: hidden; }
 header { display: none; }
+h1 { text-align: left; }
+p { font-style: italic; text-align: left; }
+
+.container { width: 95%; margin: 0 auto; }
 .departure { margin-bottom: 0.5em; }
-.transportMode { padding: 0; display: none; }
-.transportMode.active { display: block; }
 i.fa-spinner { width: 100%; text-align: center; }
 #results { padding-bottom: 1em; }
 .transportNumber, .transportTime { font-weight: bold;}
 .departure:nth-child(n+15) { display: none;}
 .align-right { text-align: right; }
+
+.page-indicator {
+    display: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.page-indicator li {
+  display: inline-block;
+  width: 0.5em;
+  height: 0.5em;
+  background: transparent;
+  margin: 0.5em;
+  border: 0.2em solid black;
+  border-radius: 50%;
+}
+
+.page-indicator li.active {
+  background: black;
+}
 
 @media(min-width: 25em) {
   .container { width: 90%; }
@@ -17,3 +39,6 @@ i.fa-spinner { width: 100%; text-align: center; }
   .container { width: 80%; }
 }
 
+@media(max-width: 220px) {
+  html, body {  font-size: 8px; }
+}

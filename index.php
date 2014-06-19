@@ -26,11 +26,21 @@
 			case 1: ?> 
 				<link rel="stylesheet" href="css/responsive-smartphone.css"> 
 			<?php break;
-			case 2:
-			case 2:
+			case 2: ?>
+				<link rel="stylesheet" href="css/responsive-smartphone.css" media="(min-width: 15em)"> 
+				<link rel="stylesheet" href="css/responsive-sw.css"> 
+			<?php break;
+			case 3:?>
+				<link rel="stylesheet" href="css/responsive-smartphone.css" media="(min-width: 15em)"> 
+				<link rel="stylesheet" href="css/responsive-sw.css"> 
+				<link rel="stylesheet" href="css/responsive-sw-2.css"> 
+			<?php break;
 			case 4: ?>
 				<link rel="stylesheet" href="css/responsive-smartphone.css" media="(min-width: 15em)"> 
 				<link rel="stylesheet" href="css/responsive-sw.css"> 
+				<link rel="stylesheet" href="css/responsive-sw-2.css"> 
+				<link rel="stylesheet" href="css/sw-nav.css"> 
+				<script type="text/javascript" src="js/sw-nav.js"></script>
 			<?php break;
 		endswitch;
 	?>
@@ -51,7 +61,9 @@
 
 	</header>
 	<div class="container">
+		<p>Här kan du se närmaste avgång för SLs bussar, tunnelbana, pendeltåg och spårvagn. <span class="search-possible">Du kan söka efter en station eller använda den närmast dig.</span> Just nu visas avgångstider ifrån:</p>
 		<h1></h1>
+		<ul class="page-indicator"></ul>
 		<div id="results" class="pure-g">
 			<i class="fa fa-spinner fa-spin fa-4x"></i>
 		</div>

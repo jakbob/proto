@@ -1,0 +1,7 @@
+@media(max-width: 220px) {
+	.transportMode { padding: 0; display: none; }
+	.transportMode.active { display: block; }
+	.page-indicator {
+		display: block;
+	}
+}
