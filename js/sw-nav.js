@@ -13,6 +13,8 @@ $(document).ready(function() {
 	}
 
 	function switchPage(e) {
+		e.preventDefault();
+
 		if (e.timeStamp - lastEvent < 100) {
 			//dubbeltryck
 			return false;
@@ -35,7 +37,7 @@ $(document).ready(function() {
 	    }
 	}
 
-	var mql = window.matchMedia("(min-width: 220px)");
+	var mql = window.matchMedia("(max-width: 220px)");
 	mql.addListener(handleMediaChange);
 	handleMediaChange(mql);
 
