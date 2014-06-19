@@ -1,0 +1,25 @@
+body { background: url("../img/diagonal-noise.png");}
+header {
+  display: block;
+  background: #65b7dd;
+  padding: 1em 0;
+  font-size: 120%;
+}
+
+img { max-width: 100%;}
+
+.header-content { position: relative; top: -200px; }
+#searchSelect div:first-child { margin-bottom: 1em;}
+.transportMode {
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+.transport-header { position: relative; margin-bottom: 0.5em; }
+.transport-header h2 {
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+  background: rgba(255,255,255,0.6);
+  padding: 0.2em;
+}

@@ -1,0 +1,9 @@
+@media(max-width: 220px) {
+  html, body { width: 100%; overflow: hidden; font-size: 8px; }
+  h1 { font-size: 70%; margin: 0; display: none;}
+  h2 {margin: 0.2em 0;}
+  .pure-g [class *="pure-u"] {
+    width: 100%;
+  }
+  img { display: none; }
+}
