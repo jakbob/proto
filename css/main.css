@@ -40,5 +40,6 @@ i.fa-spinner { width: 100%; text-align: center; }
 }
 
 @media(max-width: 220px) {
+  /* Required specifically for sony SW2 */
   html, body {  font-size: 8px; }
 }
