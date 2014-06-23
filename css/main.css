@@ -9,6 +9,7 @@ i.fa-spinner { width: 100%; text-align: center; }
 #results { padding-bottom: 1em; }
 .transportNumber, .transportTime { font-weight: bold;}
 .departure:nth-child(n+15) { display: none;}
+.gradient { display: none; }
 .align-right { text-align: right; }
 
 .page-indicator {

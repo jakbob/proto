@@ -4,4 +4,13 @@
 	.page-indicator {
 		display: block;
 	}
+	.gradient {
+		display: block;
+		width: 1.5em;
+		height: 1.5em;
+		position: absolute;
+		top: 0;
+		left: 0;
+	  	background: linear-gradient(135deg, #65b7dd, #65b7dd 50%, #FFFFFF 50%, #FFFFFF 100%) no-repeat;
+	}
 }

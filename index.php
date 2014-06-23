@@ -63,11 +63,16 @@
 	<div class="container">
 		<p>Här kan du se närmaste avgång för SLs bussar, tunnelbana, pendeltåg och spårvagn. <span class="search-possible">Du kan söka efter en station eller använda den närmast dig.</span> Just nu visas avgångstider ifrån:</p>
 		<h1></h1>
-		<ul class="page-indicator"></ul>
+		<?php if ($experiment == 4): ?>
+			<ul class="page-indicator"></ul>
+		<?php endif; ?>
 		<div id="results" class="pure-g">
 			<i class="fa fa-spinner fa-spin fa-4x"></i>
 		</div>
 	</div>
+	<?php if ($experiment == 4): ?>
+		<div class="gradient"></div>
+	<?php endif; ?>
 
 	<script id="main-template" type="x-tmpl-mustache">
 		{{#ResponseData}}
