@@ -1,6 +1,9 @@
 $(document).ready(function() {
 	var closestStation;
 
+	var parameters = queryString.parse(location.search);
+	console.log(parameters);
+
 	function searchDepartures(stationName) {
 		$("#results").html('<i class="fa fa-spinner fa-spin fa-4x"></i>')
 		$.getJSON("trafiklab.php?api=platsuppslag&q="+stationName, function(data) {
@@ -12,8 +15,6 @@ $(document).ready(function() {
 				var transports = $(Mustache.render($("#main-template").html(), data, {
 						departure: $("#departure-template").html()
 				})).filter(".transportMode");
-
-				console.log(transports);
 
 				$('.page-indicator').empty();
 				transports.each(function() {
@@ -37,8 +38,9 @@ $(document).ready(function() {
 		}, function(results, status) {
 			closestStation = results[0]["name"];
 			$("#closest").html(closestStation);
-			if (location.hash) {
-				searchDepartures(location.hash.replace("#", ""));
+			if (parameters.s) {
+				//searchDepartures(location.hash.replace("#", ""));
+				searchDepartures(parameters.s);
 			} else {
 				searchDepartures(closestStation);
 			}
@@ -56,8 +58,9 @@ $(document).ready(function() {
 		}
 	});
 
-	$("#searchStation").keypress(function() {
+	$("#searchStation").on("focus keypress", function() {
 		$("#searchButton").fadeIn();
+		$("input#searchInput").prop("checked", true);
 	})
 
 	$("#searchSelect").submit(function(e) {

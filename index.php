@@ -1,6 +1,6 @@
 <?php
 	$experiment = 1;
-	if (isset($_GET['e']))
+	if (isset($_GET['e']) && $_GET['e'] > 0)
 		$experiment = $_GET['e'];
 ?>
 <!DOCTYPE html>
@@ -15,6 +15,7 @@
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
 	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+	<script type="text/javascript" src="bower_components/query-string/query-string.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css" />
@@ -48,14 +49,15 @@
 <body>
 	<header>
 		<div class="container">
-			<form id="searchSelect">
+			<form id="searchSelect" method="GET" action=".">
+				<input type="hidden" name="e" value="<?php echo $_GET['e'] ?>" />
 				<div>
-					<input type="radio" name="searchMethod" value="input" id="searchInput" />
+					<input type="radio" name="searchMethod" value="input" id="searchInput" <?php if ($_GET['searchMethod'] == 'input') echo 'checked' ?> />
 					<label for="searchInput">Sök hållplats</label> 
-					<input type="text" id="searchStation" />
+					<input type="text" id="searchStation" name="s" />
 					<button type="submit" id="searchButton" style="display: none;">Sök</button>
 				</div>
-				<div><input type="radio" name="searchMethod" value="closest" id="searchClosest" checked /> <label for="searchClosest">Närmaste hållplats:</label> <span id="closest" /></div>
+				<div><input type="radio" name="searchMethod" value="closest" id="searchClosest" <?php if ($_GET['searchMethod'] != 'input') echo 'checked' ?> /> <label for="searchClosest">Närmaste hållplats:</label> <span id="closest" /></div>
 			</form>
 		</div>
 

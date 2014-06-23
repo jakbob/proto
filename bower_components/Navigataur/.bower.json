@@ -1,14 +1,13 @@
 {
   "name": "Navigataur",
-  "homepage": "https://github.com/micjamking/Navigataur",
-  "_release": "38b720e2ad",
-  "_resolution": {
-    "type": "branch",
-    "branch": "master",
-    "commit": "38b720e2ad2572d3204fac9ec4d82489885d37a2"
+  "_cacheHeaders": {
+    "ETag": "\"49c9e5d540205ade800c0d69a6530001\"",
+    "Content-Length": "36140",
+    "Content-Type": "text/html; charset=utf-8"
   },
-  "_source": "https://github.com/micjamking/Navigataur.git",
+  "_release": "e-tag:49c9e5d54",
+  "main": "index",
+  "_source": "https://github.com/micjamking/Navigataur",
   "_target": "*",
-  "_originalSource": "https://github.com/micjamking/Navigataur.git",
-  "_direct": true
+  "_originalSource": "https://github.com/micjamking/Navigataur"
 }

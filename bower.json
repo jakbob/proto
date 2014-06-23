@@ -19,6 +19,7 @@
     "pure": "latest",
     "requirejs": null,
     "Navigataur": "https://github.com/micjamking/Navigataur",
-    "font-awesome": "~4.1.0"
+    "font-awesome": "~4.1.0",
+    "query-string": "~0.4.0"
   }
 }
