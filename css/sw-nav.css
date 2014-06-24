@@ -4,6 +4,21 @@
 	.page-indicator {
 		display: block;
 	}
+
+	.page-indicator li {
+	  display: inline-block;
+	  width: 0.5em;
+	  height: 0.5em;
+	  background: transparent;
+	  margin: 0.5em;
+	  border: 0.2em solid black;
+	  border-radius: 50%;
+	}
+
+	.page-indicator li.active {
+	  background: black;
+	}
+	
 	.gradient {
 		display: block;
 		width: 1.5em;

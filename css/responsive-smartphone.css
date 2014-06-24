@@ -3,7 +3,6 @@ header {
   display: block;
   background: #65b7dd;
   padding: 1em 0;
-  font-size: 120%;
 }
 
 img { max-width: 100%;}
@@ -22,4 +21,11 @@ img { max-width: 100%;}
   left: 1em;
   background: rgba(255,255,255,0.6);
   padding: 0.2em;
+}
+
+@media (min-width: 15em) {
+  header {
+    font-size: 120%;
+  }
+
 }

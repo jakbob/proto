@@ -19,20 +19,6 @@ i.fa-spinner { width: 100%; text-align: center; }
     text-align: center;
 }
 
-.page-indicator li {
-  display: inline-block;
-  width: 0.5em;
-  height: 0.5em;
-  background: transparent;
-  margin: 0.5em;
-  border: 0.2em solid black;
-  border-radius: 50%;
-}
-
-.page-indicator li.active {
-  background: black;
-}
-
 @media(min-width: 25em) {
   .container { width: 90%; }
 }
