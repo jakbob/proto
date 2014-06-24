@@ -73,7 +73,7 @@
 		</div>
 	</div>
 	<?php if ($experiment == 4): ?>
-		<div class="gradient"></div>
+		<div class="gradient fa fa-arrow-right"></div>
 	<?php endif; ?>
 
 	<script id="main-template" type="x-tmpl-mustache">
